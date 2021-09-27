@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Enter student details"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_name"
+            android:hint="Name"
+            android:layout_below="@id/tv_header"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:text=""
+            android:textAlignment="center"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_contact"
+            android:hint="Contact"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_below="@id/et_name"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:text=""
+            android:textAlignment="center"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_dob"
+            android:hint="DOB"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_below="@id/et_contact"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:text=""
+            android:textAlignment="center"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_credit"
+            android:hint="credits(5 papers)"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_below="@id/et_dob"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:text=""
+            android:textAlignment="center"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btn_insert"
+            android:text="Insert"
+            android:textSize="22sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#fff"
+            android:textFontWeight="600"
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/et_credit"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btn_update"
+            android:text="Update"
+            android:textSize="22sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#fff"
+            android:textFontWeight="600"
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/btn_insert"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btn_view"
+            android:text="View"
+            android:textSize="22sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#fff"
+            android:textFontWeight="600"
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/btn_update"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btn_delete"
+            android:text="Delete"
+            android:textSize="22sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#fff"
+            android:textFontWeight="600"
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/btn_view"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
